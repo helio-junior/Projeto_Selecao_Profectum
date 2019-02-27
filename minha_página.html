@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Hélio Júnior</title>
+        <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Coiny|Sonsie+One|Walter+Turncoat" rel="stylesheet">
+        
+        <style>
+            body {
+                background-image: url(img/background-test2.jpg); background-size: cover; 
+                background-position: center;
+            }
+            
+            h1 {
+                font-family: 'Bungee Inline', cursive;
+                transform-style: flat;
+                text-align: center;
+            }
+            
+            h3 {
+                font-family: 'Sonsie One', cursive;
+                transform-style: flat;
+                text-align: left;
+            }
+            
+            h4, p {
+                font-family: 'Coiny', cursive;
+                transform-style: flat;
+                text-align: left;
+                margin-left: 10px;
+            }
+            
+            div {
+                width: 50%;
+                font-size: 100%;
+            }
+            
+            .img-origem {
+                float: left;
+                margin-right: 10px;
+            }
+            
+            button {
+                background: none;
+                border: none;
+                outline: none;
+    
+            }
+            
+            .cursor {
+                cursor:pointer;
+            }
+            
+            a {
+                font-family: 'Walter Turncoat', cursive;
+                font-size: 100%;
+            }
+        </style>
+        
+        <script>
+            function Mudarestado(el) {
+            var display = document.getElementById(el).style.display;
+            if (display == "none")
+            document.getElementById(el).style.display = 'block';
+            else
+            document.getElementById(el).style.display = 'none';
+            }
+        </script>
+    </head>
+    
+    <body>
+        <header>
+            <h1>Olá! Bem vindo à minha página!<br>Me chamo Hélio Júnior</h1>
+            <center>
+            <img style="border-radius: 50px" border="3px" align="middle" src="img/H%C3%A9lio.jpg" width="230px" height="230px">
+            </center>
+            <br><br>
+            <h3>Conheça um pouco sobre mim...</h3>
+            <br>
+        </header>
+        <main>
+            <button class="cursor" type="button" onclick="Mudarestado('minhaOrigem')">
+                <img style="border-radius: 10px" border="3px" src="img/origem.jpg" width="100px" height="100px" align="left" title="Minha Origem" class="img-origem">
+            </button>
+            <div id="minhaOrigem" style="display: none">
+                <h4>Minha Origem</h4>
+                <p>Nasci em Maranguape-CE no ano de 1990, mas fui criado em Itaitinga, venho de uma família humilde e simples, mas que sempre me motivou a estudar e buscar crescer, desde criança sempre gostei de ler, e sonhava um dia possuir um computador, depois de chegar a fase adulta e conseguir emprego, comprei meu primeiro PC.</p>
+            </div>
+            <br><br><br>
+            <button class="cursor" type="button" onclick="Mudarestado('minhaPersonalidade')">
+                <img style="border-radius: 10px" border="3px" src="img/personalidade.jpg" width="100px" height="100px" title="Minha Personalidade" class="img-origem" align="left">
+            </button>
+            <div id="minhaPersonalidade" style="display: none">
+                <h4>Minha Personalidade</h4>
+                <p>Sou bastante extrovertido, gosto de rir (nas horas certas) e também de um ambiente descontraído, gosto de ajudar o próximo na medida do possível. O meu defeito as vezes é ser otimista demais e acabo não enchergando o lado ruim das coisas, isso as vezes me faz ser pego de surpresa.</p>
+            </div>
+            <br><br><br>
+            <button class="cursor" type="button" onclick="Mudarestado('minhaHobbies')">
+                <img style="border-radius: 10px" border="3px" src="img/hobbies.jpg" width="100px" height="100px" title="Meus Hobbies" class="img-origem" align="left">
+            </button>
+            <div id="minhaHobbies" style="display: none">
+                <h4>Meus Hobbies</h4>
+                <p>Gosto muito de ler livros e hq's, também gosto de passar um tempo com a minha família, assistindo, conversando e etc. Uma das minhas atividades preferidas é astronomia, adoro observar os planetas, constelações, nebulosas dentre outros corpos celestes, as minhas observações são feitas a olho nu ou com telescópio. O céu noturno para mim é um dos maiores presentes da natureza.</p>
+            </div>
+            <br><br><br>
+            <button class="cursor" type="button" onclick="Mudarestado('minhaMeuCursoTI')">
+                <img style="border-radius: 10px" border="3px" src="img/area_TI.jpg" width="100px" height="100px" title="Meu ingresso no curso de TI" class="img-origem" align="left">
+            </button>
+            <div id="minhaMeuCursoTI" style="display: none">
+                <h4>Meu ingresso no curso de TI</h4>
+                <p>Comecei buscando me profissionalizar em algo que eu gostasse, então resolvi ir para a área de TI, comecei me matriculando em Redes de Computadores no segundo semestre de 2017 na Faculdade Ateneu (Hoje Centro Universitário), mas ao me deparar com a programação descobri o que realmente queria e mudei para Análise e desenvolvimento de Sistemas, e hoje a cada dia vou me apaixonando mais por essa área.</p>
+            </div>
+            <br><br><br>
+            <button class="cursor" type="button" onclick="Mudarestado('meuObjetivo')">
+                <img style="border-radius: 10px" border="3px" src="img/objetivos.jpg" width="100px" height="100px" title="Meus Objetivos" class="img-origem" align="left">
+            </button>
+            <div id="meuObjetivo" style="display: none">
+                <h4>Meus Objetivos</h4>
+                <p>Meu objetivo é seguir carreira como desenvolvedor em uma empresa onde possa usar e desenvolver minhas habilidades, aprender no dia-a-dia com os desafios e as pessoas ao meu redor, desejo um dia desenvolver um grande projeto e quem sabe até trabalhar no exterior. Estou buscando oportunidades para crescer profissionalmente e se alguma porta se abrir para mim pretendo agarrar com unhas e dentes, do contrário, vou usar cada "Não" como lição para seguir em frente.</p>
+            </div>
+            
+            <form>
+                
+            </form>
+        </main>
+        <br><br>
+        <footer align="center">
+            <a><b>Contato</b></a><br><br>
+            <a><b>Whatsapp: (85)98951-2839</b></a><br><br>
+            <a><b>Email: heliomsjr@gmail.com</b></a>
+        </footer>
+    </body>
+</html>
